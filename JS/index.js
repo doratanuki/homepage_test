@@ -20,19 +20,8 @@ function fadeAnime(){
     
 }
 
+
 function fadeScroll(){
-    var Offset = $(".img-and.name").offset().top;
-    var ScrollTop = $(window).scrollTop();
-    var WindowHeight = $(window).height();
-    var Ratio = 1 - ScrollTop / WindowHeight;
-    var X = 0.2
-    console.log(Ratio);
-
-    $(".img-and-name").css("opacity", X);
-}
-
-
-function test(){
     var ScrollTop = $(window).scrollTop();
     var WindowHeight = $(window).height();
     var ScrollBottom = ScrollTop + WindowHeight
@@ -59,6 +48,6 @@ function test(){
 
 
 $(window).scroll(function(){
-
-    test();
+    fadeAnime();
+    fadeScroll();
 });
