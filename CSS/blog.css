@@ -25,11 +25,12 @@ main{
 /*==========================================
                     セクション1
 ============================================*/
+
+
 .reason{
     background-image: url(../images/books.jpg);
     background-attachment: fixed;
     background-position: bottom;
-    background-size: cover;
     box-shadow:0px 0px 10px 1px rgba(255, 255, 255, 0.7);
     padding: 20px;
     margin-bottom: 70px;
@@ -60,7 +61,6 @@ main{
     background-image: url(../images/titech.jpeg);
     background-attachment: fixed;
     background-position: bottom;
-    background-size: cover;
     padding: 20px;
     box-shadow:0px 0px 10px 1px rgba(255, 255, 255, 0.642);
     margin-bottom: 70px;
@@ -113,7 +113,6 @@ img{
     background-image: url(../images/moon1.PNG);
     background-attachment: fixed;
     background-position: bottom;
-    background-size: cover;
     box-shadow:0px 0px 10px 1px rgba(255, 255, 255, 0.7);
     color: #fff;
     margin-bottom: 70px;
