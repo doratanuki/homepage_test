@@ -180,29 +180,6 @@ main{
         font-size: 16px;
         margin-top: 20px;
     }
-}
-
-/*=========================================
-                    ABOUT
-===========================================*/
-.about{
-    margin-top: 20px;
-    padding-bottom: 5px;
-}
-
-.about p{
-    color: white;
-    padding: 0 30px;
-    margin: 20px;
-    border-right: 2px solid #ccc;
-}
-
-
-
-@media screen and (min-width:481px) and (max-width:1024px) {
-    
-}
-@media screen and (min-width:1025px) {
     .career-list{
         list-style: none;
         color: white;
@@ -220,4 +197,45 @@ main{
         padding-left: 20px;
         padding-top: 5px;
     }
+
+}
+
+/*=========================================
+                    ABOUT
+===========================================*/
+.about{
+    margin-top: 20px;
+    padding-bottom: 5px;
+}
+
+.about p{
+    color: white;
+    padding: 0 1rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    border-right: 2px solid #ccc;
+}
+
+
+
+@media screen and (min-width:481px) and (max-width:1024px) {
+    
+}
+@media screen and (min-width:1025px) {
+
+}
+/*=========================================
+                   CONTACT
+===========================================*/
+
+.contact{
+    margin-top: 20px;
+    padding-bottom: 5px;
+}
+
+.contact p{
+    color: white;
+    padding: 0 1rem;
+    margin-left: 2rem;
+    border-left: 2px solid #ccc;
 }

@@ -51,6 +51,8 @@ body{
         background-image: url(../../images/titech.jpeg);
         background-size: cover; /* 画像をウィンドウ全体に合わせる場合 */
         background-attachment: fixed; /* 画像を固定する */
+        z-index: -1;
+        clip: rect(auto, auto, auto, auto);
     }
     
     .header-title{
