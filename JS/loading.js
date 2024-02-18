@@ -19,13 +19,6 @@ $(function(){$(".loading-frame").html('\
 </div>')});
 
 
-$(window).on('load',function(){
-    $("#loading").delay(4400).fadeOut('slow');
-    $("#loading-text").delay(4000).fadeOut('slow')
-    $("#loading-logo img").delay(4200).animate({width : '180px'},1000);
-    repeat();
-});
-
 function loading_animation(){
     for (let i = 0; i < $('p span').length + 1 ; i++) {
         $(`p span:nth-of-type(${i})`).delay(i * 100).animate({top: '-20px'}, 300).animate({top: '0px'}, 300);
@@ -49,3 +42,10 @@ function repeat(){
     //2回目からの処理実行
     let time = setInterval(next_animation,2000);
 }
+
+$(window).on('load',function(){
+    repeat();
+    $("#loading").delay(4400).fadeOut('slow');
+    $("#loading-text").delay(4000).fadeOut('slow')
+    $("#loading-logo img").delay(4200).animate({width : '180px'}, 1000);
+});
