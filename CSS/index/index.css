@@ -1,5 +1,4 @@
 body{
-    background-color: #ccc;
     font-family: serif;
     margin: 0;
     padding: 0;
@@ -47,11 +46,13 @@ body{
                     ~480px
 ================================================*/
 @media screen and (max-width:480px){
-    body{
+    html{
         background-image: url(../../images/titech.jpeg);
         background-size: cover; /* 画像をウィンドウ全体に合わせる場合 */
         background-attachment: fixed; /* 画像を固定する */
-        z-index: -1;
+        z-index: -1;        
+    }
+    body{
         clip: rect(auto, auto, auto, auto);
     }
     
