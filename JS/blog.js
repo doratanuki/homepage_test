@@ -2,27 +2,20 @@ function test(){
     var ScrollTop = $(window).scrollTop();
     var WindowHeight = $(window).height();
     var ScrollBottom = ScrollTop + WindowHeight
-    
-    //section1
-    var sec1_top = $("#section1").offset().top
-    var sec1_height = $("#section1").innerHeight()
-    var sec1_bottom = sec1_top + sec1_height
-    var v1 = ScrollTop - sec1_height
-    $("#section1").css("background-position",`0px ${ScrollTop - 200}px`)
+    var titleheight = $(".title").outerHeight();
+    var sec1height = $("#section1").outerHeight();
+    var sec2height = $("#section2").outerHeight();
+    var sec3height = $("#section3").outerHeight();
 
+    //section1切るY座標
+    var v1 = ScrollBottom - (sec1height + titleheight + 100)
+    $(".sec1bg img").css("clip-path", `inset(0px 0px ${v1}px 0px)`);
 
-    //section2
-    var sec2_top = $("#section2").offset().top
+    var v2 = v1 - sec2height - 75
+    $(".sec2bg img").css("clip-path", `inset(${WindowHeight - v1}px 0px ${v2}px 0px)`);
 
-
-    //section3
-    var sec3_top = $("#section3").offset().top
-
-    console.log("scrollTop",ScrollTop)
-    console.log("sec1_top:",sec1_top)
-    console.log("sec1_height:",sec1_height)
-    console.log("sec1_bottom",sec1_bottom)
-    console.log("v1",v1)
+    var v3 = v2 - sec3height -200
+    $(".sec3bg img").css("clip-path", `inset(${WindowHeight - v2}px 0px ${v3}px 0px)`);
 }
 
 
