@@ -1,7 +1,6 @@
 main{
     margin-bottom: 50px;
     padding: 0;
-    opacity: 0;
 }
 
 
@@ -52,6 +51,7 @@ main{
     background-color: #2d364caa;
     position: relative;
     padding: 20px 0;
+    opacity: 0;
 }
 
 /*プロフィール写真*/
@@ -210,6 +210,7 @@ main{
     background-color: #2d364caa;
     margin-top: 100px;
     padding: 1rem 0;
+    opacity: 0;
 }
 
 .about p{
@@ -235,6 +236,7 @@ main{
     background-color: #2d364caa;
     margin-top: 100px;
     padding: 1rem 0;
+    opacity: 0;
 }
 
 .contact p{

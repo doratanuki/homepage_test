@@ -35,18 +35,30 @@ function fadeScroll(){
 function test(){
     var ScrollTop = $(window).scrollTop();
     var WindowHeight = $(window).height();
+    var ScrollBottom = ScrollTop + WindowHeight
     
     //画面1
     var opa1 = 1 - ScrollTop / 450;
     $(".img-and-name").css("opacity", opa1);
 
-    //画面2
-    var opa2 = ScrollTop / 200  ;
-    $("main").css("opacity", opa2);
+    //PROFILE
+    var opa2 =  ScrollTop / 100 ;
+    $(".profile").css("opacity", opa2);
+
+    //ABOUT
+    var Y_about = $(".about").offset().top;
+    var opa3 =  (ScrollBottom - Y_about) / 100 ;
+    $(".about").css("opacity", opa3);
+
+    //CONTACT
+    var Y_contact = $(".contact").offset().top;
+    var opa4 = (ScrollBottom - Y_contact) / 100;
+    $(".contact").css("opacity", opa4);
 }
 
 
+
 $(window).scroll(function(){
-    fadeAnime();
+
     test();
 });
