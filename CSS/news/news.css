@@ -1,0 +1,131 @@
+body{
+    background-color: #f6f6f6;
+}
+
+.open-menu{
+    background-color: #B5D9DB;
+}
+
+main{
+    padding: 0 10px;
+    background-color: #B5D9DB;
+    border: 3px solid #aaa;
+}
+
+/*タイトル*/
+.blog-title{
+    margin:0px 20px;
+    padding: 10px;
+    border-bottom:2px solid grey ;
+    /*フォント*/
+    color: rgb(0, 0, 0);
+    font-size: 25px;
+    text-align: center;
+}
+
+@media screen and (max-width:480px){
+    main{
+        margin: 20px 20px;
+        border-radius: 20px;
+    }
+    .blog-title{
+        margin:0px 20px;
+        padding: 10px;
+        font-size: 25px;
+    }
+    .tweet-day{
+        font-size: 11px;
+    }
+
+}
+@media screen and (min-width:481px) and (max-width:1024px){
+    main{
+        margin: 30px 10%;
+        border-radius: 30px;
+    }   
+    .blog-title{
+        margin:0px 25px;
+        padding: 10px;
+        font-size: 30px;
+    }
+    .tweet-day{
+        font-size: 13px;
+    }
+}
+@media screen and (min-width:1025px){
+    main{
+        margin: 30px 25%;
+        border-radius: 30px;
+    }
+    .blog-title{
+        margin:0px 40px;
+        padding: 20px;
+        font-size: 30px;
+    }
+    .tweet-day{
+        font-size: 13px;
+    }
+}
+
+/*並び方*/
+.blog{
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.tweet-frame{
+    position: relative;
+    display: flex;
+    /*枠*/
+    border: 2px solid rgb(70, 70, 70);
+    border-radius: 15px;
+    background-color: white;
+    margin:20px 7%;
+    padding: 10px;
+}
+
+/*画像*/
+.tweet-img{
+    width: 40px;
+    height: 40px;
+    /*画像選択*/
+    background-image: url(../../images/profile/シャーロックホームズのフリー素材2.png);
+    background-color: black;
+    background-size: 30px 30px;
+    background-repeat: no-repeat;
+    /*位置*/
+    background-position: center;
+    /*境界線*/
+    border: 2px solid rgb(70, 70, 70);
+    border-radius: 50%;
+
+}
+/*ユーザー名・ツイート・日時*/
+.tweet-text-frame{
+    /*テキスト配置*/
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-left: 10px;
+}
+
+/*ツイート内容*/
+.tweet-text{
+    /*フォント*/
+    font-size: 16px;
+    /*テキスト位置*/
+    text-align:start;
+    margin: 1rem 1rem  1rem 0rem;
+}
+/*日付*/
+.tweet-day{
+    text-align: end;
+}
+
+/*ユーザー名*/
+.tweet-user{
+    /*フォント*/
+    font-size: 20px;
+    /*位置*/
+    margin-top: 7px;
+}

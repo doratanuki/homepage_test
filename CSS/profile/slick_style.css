@@ -1,0 +1,66 @@
+/*==================================================
+スライダーのためのcss
+===================================*/
+.slider {
+  position:relative;
+  z-index: 1;
+  margin: 0;
+  padding: 0;
+}
+
+/*矢印の設定*/
+
+/*戻る、次へ矢印の位置*/
+.slick-prev, 
+.slick-next {
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 5px;
+  position: absolute;/*絶対配置にする*/
+  z-index: 3;
+  top:40px;
+  cursor: pointer;/*マウスカーソルを指マークに*/
+  outline: none;/*クリックをしたら出てくる枠線を消す*/
+  height: 200px;
+  width: auto;
+}
+
+.slick-prev {/*戻る矢印の位置と形状*/
+  left:0;
+}
+
+.slick-next {/*次へ矢印の位置と形状*/
+  right:0;
+}
+
+/*ドットナビゲーションの設定*/
+
+.slick-dots {
+  position: relative;
+  z-index: 3;
+  text-align: center;
+  margin: 3px;
+  padding: 0;
+}
+
+.slick-dots li {
+  display:inline-block;
+  margin:0 5px;
+}
+
+.slick-dots button {
+  color: transparent;
+  outline: none;
+  width:12px;/*ドットボタンのサイズ*/
+  height:12px;/*ドットボタンのサイズ*/
+  padding: 0;
+  display:block;
+  border-radius:50%;
+  background:#000;/*ドットボタンの色*/
+}
+
+.slick-dots .slick-active button{
+  background:#ccc;/*ドットボタンの現在地表示の色*/
+}

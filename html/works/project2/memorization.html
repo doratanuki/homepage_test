@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>単語帳</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width" />
+        <link rel="stylesheet" type="text/css" href="../../../CSS/header/header.css">
+        <link rel="stylesheet" type="text/css" href="../../../CSS/openbtn/openbtn.css">
+        <link rel="stylesheet" type="text/css" href="../../../CSS/footer/footer.css">
+        <link rel="stylesheet" type="text/css" href="css/memorization_style.css">
+    </head>
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-7CLRM8DB34"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-7CLRM8DB34');
+    </script>
+    
+    <body>
+        <header>
+            <!--タイトル-->
+            <div class="header-title">単語帳</div>
+            <div>
+                <div class="openbtn"><span></span><span></span><span></span></div>
+                <div class="open-menu-background"></div>
+                <nav class="open-menu">
+                    <ul>
+                        <li class="open-menu-item"><a href="../../../index.html">HOME</a></li>
+                        <li class="open-menu-item"><a href="../../../works.html">WORKS</a></li>
+                    </ul>
+                </nav>                
+            </div>
+            <!--メニューボタン-->
+
+        </header>
+
+        <main>
+            <section class="text-input">
+                <div class="explanation">
+                    下の入力欄に単語を入力すると単語帳に語句が反映されます。<br>
+                    単語帳はクリックすることで日本語・英語を変更することが出来ます。
+                </div>
+                <div class="input-frame">
+                    <div class="input-frame-item">
+                        <div>
+                            <label>英単語1：</label>
+                            <input type="text" id="English-spelling-input1"  class="English-spelling-input English-spelling1">
+                        </div>
+                        <div>
+                            <label>日本語1：</label>
+                            <input type="text" id="Japanese-spelling-input1" class="Japanese-spelling-input Japanese-spelling1">
+                        </div>
+                    </div>
+                    <div class="input-frame-item">
+                        <div>
+                            <label>英単語2：</label>
+                            <input type="text" id="English-spelling-input2" class="English-spelling-input English-spelling2">
+                        </div>
+                        <div>
+                            <label>日本語2：</label>
+                            <input type="text" id="Japanese-spelling-input2" class="Japanese-spelling-input Japanese-spelling2">
+                        </div>
+                    </div>
+                    <div class="input-frame-item">
+                        <div>
+                            <label>英単語3：</label>
+                            <input type="text" id="English-spelling-input3" class="English-spelling-input English-spelling3">
+                        </div>
+                        <div>
+                            <label>日本語3：</label>
+                            <input type="text" id="Japanese-spelling-input3" class="Japanese-spelling-input Japanese-spelling3">
+                        </div>
+                    </div>
+                    <div class="input-frame-item">
+                        <div>
+                            <label>英単語4：</label>
+                            <input type="text" id="English-spelling-input4" class="English-spelling-input English-spelling4">
+                        </div>
+                        <div>
+                            <label>日本語4：</label>
+                            <input type="text" id="Japanese-spelling-input4" class="Japanese-spelling-input Japanese-spelling4">
+                        </div>
+                    </div>
+                    <div class="input-frame-item">
+                        <div>
+                            <label>英単語5：</label>
+                            <input type="text" id="English-spelling-input5" class="English-spelling-input English-spelling5">
+                        </div>
+                        <div>
+                            <label>日本語5：</label>
+                            <input type="text" id="Japanese-spelling-input5" class="Japanese-spelling-input Japanese-spelling5">
+                        </div>
+                    </div>
+                </div>
+                
+
+                <div class="close-text-input">入力フォームを閉じる</div>
+                
+            </section>
+
+            
+            <section class="sec1">
+                <ul class="sec1-ul">
+                    <li id="list-frame1" class="list-frame"><div id="English-spelling1" class="English-spelling English-spelling1">英語1</div>
+                                                            <div id="Japanese-spelling1" class="Japanese-spelling Japanese-spelling1 hide">日本語1</div></li>
+                    <li id="list-frame2" class="list-frame"><div id="English-spelling2" class="English-spelling English-spelling2">英語2</div>
+                                                            <div id="Japanese-spelling2" class="Japanese-spelling Japanese-spelling2 hide">日本語2</div></li>
+                    <li id="list-frame3" class="list-frame"><div id="English-spelling3" class="English-spelling English-spelling3">英語3</div>
+                                                            <div id="Japanese-spelling3" class="Japanese-spelling Japanese-spelling3 hide">日本語3</div></li>
+                    <li id="list-frame4" class="list-frame"><div id="English-spelling4" class="English-spelling English-spelling4">英語4</div>
+                                                            <div id="Japanese-spelling4" class="Japanese-spelling Japanese-spelling4 hide">日本語4</div></li>
+                    <li id="list-frame5" class="list-frame"><div id="English-spelling5" class="English-spelling English-spelling5">英語5</div>
+                                                            <div id="Japanese-spelling5" class="Japanese-spelling Japanese-spelling5 hide">日本語5</div></li>
+                </ul>
+            </section>
+        </main>
+
+        <footer>
+            <nav>
+                <ul class="footer-sns-items">
+                    <li><a href="#" target="_blank" class="footer-sns-item"><img src="../../../images/footer/LINE_Brand_icon.png"></a></li>
+                    <li><a href="#" target="_blank" class="footer-sns-item"><img src="../../../images/footer/2021 Twitter logo - blue.png"></a></li>
+                    <li><a href="#" target="_blank" class="footer-sns-item"><img src="../../../images/footer/Instagram_Glyph_Gradient.png"></a></li>
+                </ul>
+            </nav>
+            <div class="footer-text">Created By Doratanuki</div>
+        </footer>
+        
+        <script src="https://code.jquery.com/jquery-3.6.4.js" integrity="sha256-a9jBBRygX1Bh5lt8GZjXDzyOB+bWve9EiO7tROUtj/E=" crossorigin="anonymous"></script>
+        <script src="../../../JS/openbtn.js"></script>
+        <script src="js/style.js"></script>
+
+    </body>
+</html>

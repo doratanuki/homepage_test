@@ -1,0 +1,163 @@
+body{
+    background-color: #ccc;
+    font-family: serif;
+    margin: 0;
+    padding: 0;
+}
+
+/*写真と名前*/
+.img-and-name{
+    position: relative;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    background-repeat: no-repeat;
+}
+
+.img-and-name .index-img-text{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.img-and-name .index-img{
+    background-image: url(../../images/profile/draemon.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    margin:auto;
+    border:rgb(255, 255, 255) solid 7px ;
+}
+
+.img-and-name h1{
+    background-color: #ffffff;
+    text-align: center;
+    font-size: 40px;
+    margin: 16px;
+    padding: 0px 16px;
+}
+
+
+
+/*===============================================
+                    ~480px
+================================================*/
+@media screen and (max-width:480px){
+    body{
+        background-image: url(../../images/titech.jpeg);
+        background-size: cover; /* 画像をウィンドウ全体に合わせる場合 */
+        background-attachment: fixed; /* 画像を固定する */
+    }
+    
+    .header-title{
+        /*フォント・サイズなど*/
+        font-size:45px;
+        text-shadow:3px 3px 0 #333;
+        color: rgb(255, 255, 255);
+        font-weight: bold;
+        background-color:rgba(255, 255, 255, 0.3);
+        border-radius: 10px;
+        /*配置*/
+        text-align: center;
+        padding: 3px 20px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+    }
+}
+
+/*===============================================
+                    481px~1024px
+================================================*/
+@media screen and (min-width:481px) and (max-width:1024px){
+    .open-menu{
+        background-color: #d7af92;
+    }
+
+    .img-and-name{
+        /*背景画像*/
+        background-image: url(../../images/IMG_1104.jpeg);
+        aspect-ratio: 3/2;
+        overflow: hidden;
+    }
+    
+    /*タイトル*/
+    .header-title{
+        /*フォント・サイズなど*/
+        font-size:50px;
+        color: black;
+        font-weight: bold;
+        text-shadow: 3px 3px rgba(0, 0, 0, 0.4);
+        background-color: rgba(255, 255, 255, 0.7);
+        padding: 0px 30px;
+        /*配置*/
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        text-align: center;
+    }
+}
+
+/*===============================================
+                    1025px~
+================================================*/
+@media screen and (min-width:1025px) {
+    .img-and-name{
+        /*背景画像*/
+        background-image: url(../../images/IMG_1104.jpeg);
+        aspect-ratio: 3/2;
+    }
+
+    .header-title{
+        /*フォント・サイズなど*/
+        font-size:100px;
+        color: black;
+        font-weight: bold;
+        /*配置*/
+        position: absolute;
+        top: 50px;
+        left: 30px;
+    }
+
+    .open-menu{
+        padding: 0px;
+        /*配置*/
+        position: absolute;
+        top: 200px;
+        left: 30px;
+
+    }
+
+    .open-menu ul{
+        list-style: none;
+        padding: 0px;
+        display: flex;
+    }
+
+    .open-menu-item{
+        text-align: center;
+        padding: 10px;
+    }
+
+    .open-menu-item a{
+        /*フォント設定*/
+        text-decoration: none;
+        color: black;
+        font-size: 30px;
+        /*枠*/
+        display: inline-block;
+        width: 200px;
+        border: 1px solid black;
+        background-color: rgba(255, 255, 255, 0.2);
+        padding: 10px;
+        /*配置*/
+    }
+
+}
+

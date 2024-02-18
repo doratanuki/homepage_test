@@ -1,0 +1,129 @@
+body{
+    background-color: #001029;
+}
+main{
+    color: white;
+    font-family: serif;
+    padding:  0;
+}
+
+.open-menu{
+    background-color: #ccc;
+}
+
+.title{
+    background-image: url(../images/dna.jpg);
+    background-size: cover;
+    text-align: center;
+    color:white;
+    margin-top: 20px;
+    line-height: 100px;
+    height: 100px;
+}
+
+/*==========================================
+                    セクション1
+============================================*/
+.reason{
+    background-image: url(../images/titech.jpeg);
+    background-size: cover;
+    background-position: middle;
+    box-shadow:0px 0px 15px 5px rgba(255, 255, 255, 0.7);
+    padding: 20px;
+    margin-bottom: 70px;
+}
+
+.reason .text-all{
+    padding: 20px;
+    margin: px;
+    background-color:rgba(255, 255, 255, 0.686);
+    color: #000;
+
+}
+
+.reason h1{
+    padding-bottom: 5px;
+    margin: 0;
+    text-align: center;
+    border-bottom: solid #001029;
+}
+
+.reason p{
+
+}
+
+/*==========================================
+                    セクション2
+============================================*/
+
+.reserch-pay{
+    background-image: url(../images/books.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 20px;
+    box-shadow:0px 0px 15px 5px rgba(255, 255, 255, 0.642);
+    margin-bottom: 70px;
+}
+
+.reserch-pay .text-all{
+    padding: 20px;
+    background-color:rgba(255, 255, 255, 0.7);
+    color: #000;
+}
+
+.reserch-pay h1{
+
+    text-align: center;
+    border-bottom: solid black;
+}
+
+.pay{
+    margin: auto;
+    padding: 10px;
+
+}
+
+.pay table{
+    text-align: center;
+    width: 100%;
+}
+
+.pay p{
+    text-align: end;
+    margin: 0;
+}
+
+table td {
+    padding: 5px 10px;
+}
+
+img{
+    width: 100%;
+
+}
+
+/*==========================================
+                    セクション3
+============================================*/
+
+#section3{
+    margin: auto;
+    padding: 20px;
+    background-image: url(../images/moon1.PNG);
+    background-size: cover;
+    background-position: middle;
+    box-shadow:0px 0px 15px 5px rgba(255, 255, 255, 0.7);
+    color: #fff;
+    margin-bottom: 70px;
+}
+
+#section3 .text-all{
+    padding: 20px;
+    background-color: #0000005d;
+}
+
+
+#section3 h1{
+    text-align: center;
+    border-bottom: solid #ffffff;
+}
