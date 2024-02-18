@@ -28,14 +28,19 @@ main{
 
 
 .reason{
-    background-image: url(../images/books.jpg);
-    background-attachment: fixed;
-    background-position: bottom;
     box-shadow:0px 0px 10px 1px rgba(255, 255, 255, 0.7);
     padding: 20px;
     margin-bottom: 70px;
+    background-image: url(../images/books.jpg);
+    background-size: 200%;
+    background-position: 0px -200px;
+    background-repeat: no-repeat;
 }
 
+
+    /*background-image: url(../images/titech.jpeg);
+    background-attachment: fixed;
+    background-size: cover;*/
 .reason .text-all{
     padding: 20px;
     margin: px;
@@ -51,6 +56,8 @@ main{
     border-bottom: solid #001029;
 }
 
+/*======背景画像======*/
+
 
 /*==========================================
                     セクション2
@@ -58,12 +65,12 @@ main{
 
 
 .reserch-pay{
-    background-image: url(../images/titech.jpeg);
-    background-attachment: fixed;
-    background-position: bottom;
     padding: 20px;
     box-shadow:0px 0px 10px 1px rgba(255, 255, 255, 0.642);
     margin-bottom: 70px;
+    background-image: url(../images/titech.jpeg);
+    background-attachment: fixed;
+    background-size: cover;
 }
 
 .reserch-pay .text-all{
@@ -110,9 +117,6 @@ img{
 #section3{
     margin: auto;
     padding: 20px;
-    background-image: url(../images/moon1.PNG);
-    background-attachment: fixed;
-    background-position: bottom;
     box-shadow:0px 0px 10px 1px rgba(255, 255, 255, 0.7);
     color: #fff;
     margin-bottom: 70px;
@@ -128,3 +132,4 @@ img{
     text-align: center;
     border-bottom: solid #ffffff;
 }
+
