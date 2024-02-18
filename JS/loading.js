@@ -33,7 +33,7 @@ function repeat(){
     let next_animation = function(){
         i++;
         console.log(i)
-        if(i < 5){
+        if(i < 3){
             loading_animation();
         } else{
             clearInterval(time)
@@ -43,7 +43,7 @@ function repeat(){
     let time = setInterval(next_animation,2000);
 }
 
-$(window).on('load',function(){
+$(function(){
     repeat();
     $("#loading").delay(4400).fadeOut('slow');
     $("#loading-text").delay(4000).fadeOut('slow')
