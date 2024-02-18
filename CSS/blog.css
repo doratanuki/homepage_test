@@ -16,7 +16,7 @@ main{
     text-align: center;
     color:white;
     margin-top: 10px;
-    margin: 5px 2rem;
+    margin: 10px 2rem;
     line-height: 50px;
     height: 50px;
     border-bottom: solid white 1px;
@@ -50,9 +50,6 @@ main{
     border-bottom: solid #001029;
 }
 
-.reason p{
-
-}
 
 /*==========================================
                     セクション2
