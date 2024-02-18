@@ -1,12 +1,7 @@
 main{
-    background-color: #2d364c;
-    margin: 20px 0;
-    padding: 20px 0;
-}
-
-.profile{
-    position: relative;
-    padding-top: 5px;
+    margin-bottom: 50px;
+    padding: 0;
+    opacity: 0;
 }
 
 
@@ -49,6 +44,14 @@ main{
         text-align: left;
         letter-spacing: 2px;
     }
+}
+/*==================================================
+                    profile
+====================================================*/
+.profile{
+    background-color: #2d364caa;
+    position: relative;
+    padding: 20px 0;
 }
 
 /*プロフィール写真*/
@@ -204,15 +207,15 @@ main{
                     ABOUT
 ===========================================*/
 .about{
-    margin-top: 20px;
-    padding-bottom: 5px;
+    background-color: #2d364caa;
+    margin-top: 100px;
+    padding: 1rem 0;
 }
 
 .about p{
     color: white;
     padding: 0 1rem;
-    margin-left: 2rem;
-    margin-right: 2rem;
+    margin: 1rem 2rem;
     border-right: 2px solid #ccc;
 }
 
@@ -229,13 +232,14 @@ main{
 ===========================================*/
 
 .contact{
-    margin-top: 20px;
-    padding-bottom: 5px;
+    background-color: #2d364caa;
+    margin-top: 100px;
+    padding: 1rem 0;
 }
 
 .contact p{
     color: white;
     padding: 0 1rem;
-    margin-left: 2rem;
+    margin: 1rem 2rem;
     border-left: 2px solid #ccc;
 }

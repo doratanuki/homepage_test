@@ -1,20 +1,16 @@
 //HTML挿入
 $(function(){$(".loading-frame").html('\
 <div id="loading">\
-<div id="loading-logo"><img src="images/profile/シャーロックホームズのフリー素材2.png"></div>\
+<div id="loading-logo"><img src="images/profile/doraemon.jpg"></div>\
 <div id="loading-text">\
     <p>\
-        <span>N</span>\
-        <span>o</span>\
-        <span>w</span>\
-        <span></span>\
         <span>L</span>\
-        <span>o</span>\
-        <span>a</span>\
-        <span>d</span>\
-        <span>i</span>\
-        <span>n</span>\
-        <span>g</span>\
+        <span>O</span>\
+        <span>A</span>\
+        <span>D</span>\
+        <span>I</span>\
+        <span>N</span>\
+        <span>G</span>\
         <span>.</span>\
         <span>.</span>\
         <span>.</span>\
@@ -24,9 +20,9 @@ $(function(){$(".loading-frame").html('\
 
 
 $(window).on('load',function(){
-    $("#loading").delay(5000).fadeOut('slow');
-    $("#loading-text").delay(4200).fadeOut('slow')
-    $("#loading-logo img").delay(4700).animate({width : '180px'},1000);
+    $("#loading").delay(4400).fadeOut('slow');
+    $("#loading-text").delay(4000).fadeOut('slow')
+    $("#loading-logo img").delay(4200).animate({width : '180px'},1000);
     repeat();
 });
 

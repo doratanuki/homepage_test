@@ -6,8 +6,10 @@ body{
     padding: 0;
 }
 
+
 /*写真と名前*/
 .img-and-name{
+    opacity: 1;
     position: relative;
     background-size: cover;
     width: 100%;
@@ -23,7 +25,7 @@ body{
 }
 
 .img-and-name .index-img{
-    background-image: url(../../images/profile/draemon.jpg);
+    background-image: url(../../images/profile/doraemon.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -31,15 +33,16 @@ body{
     height: 180px;
     border-radius: 50%;
     margin:auto;
-    border:rgb(255, 255, 255) solid 7px ;
+    border:rgba(255, 255, 255, 0.7) solid 7px ;
 }
 
 .img-and-name h1{
-    background-color: #ffffff;
+    background-color: #ffffff00;
+    border-bottom: #2d364c solid 2px;
     text-align: center;
     font-size: 40px;
-    margin: 16px;
-    padding: 0px 16px;
+    margin: 0px;
+    padding: 0px 50px;
 }
 
 
