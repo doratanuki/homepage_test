@@ -13,14 +13,21 @@ function test(){
     var sec2height = $("#section2").outerHeight();
     var sec3height = $("#section3").outerHeight();
 
+    //blankのtop
+    var blank1top = $("#blank1").offset().top;
+    var blank2top = $("#blank2").offset().top;
+    var blank3top = $("#blank3").offset().top;
+    console.log(blank1top)
+    console.log(blank2top)
+
     //section1切るY座標
-    var v1 = ScrollBottom - (sec1top + sec1height);
+    var v1 = ScrollBottom - blank1top;
     $(".sec1bg img").css("clip-path", `inset(0px 0px ${v1}px 0px)`);
     //section2
-    var v2 = ScrollBottom - (sec2top + sec2height);
-    $(".sec2bg img").css("clip-path", `inset(${WindowHeight - v1}px 0px ${v2}px 0px)`);
+    var v2 = ScrollBottom - blank2top;
+    $(".sec2bg img").css("clip-path", `inset(${sec2top - ScrollTop}px 0px ${v2}px 0px)`);
     //section3
-    $(".sec3bg img").css("clip-path", `inset(${WindowHeight - v2}px 0px 0px 0px)`);
+    $(".sec3bg img").css("clip-path", `inset(${sec3top - ScrollTop}px 0px 0px 0px)`);
 }
 
 
