@@ -16,13 +16,15 @@ $(function(){$(".loading-frame").html('\
         <span>.</span>\
     </p>\
 </div>\
-</div>')});
+</div>')
+});
 
 
 function loading_animation(){
+    console.log("loading_animation is ready")
     for (let i = 0; i < $('p span').length + 1 ; i++) {
         $(`p span:nth-of-type(${i})`).delay(i * 100).animate({top: '-20px'}, 300).animate({top: '0px'}, 300);
-    }        
+    }
 }
 
 function repeat(){
@@ -43,9 +45,16 @@ function repeat(){
     let time = setInterval(next_animation,2000);
 }
 
+
+
 $(window).on('load',function(){
-    repeat();
-    $("#loading").delay(4400).fadeOut('slow');
-    $("#loading-text").delay(4000).fadeOut('slow')
-    $("#loading-logo img").delay(4200).animate({width : '180px'}, 1000);
+    repeat()
+
+    setTimeout(function(){
+        $("#loading-text").fadeOut('slow')
+        $("#loading-logo img").animate({width : '180px'}, 1000);
+    },4400)
+    setTimeout(function(){
+        $("#loading").fadeOut('slow')
+    },4600)
 });
