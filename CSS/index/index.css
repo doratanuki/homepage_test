@@ -13,7 +13,7 @@ body{
     position: relative;
     background-size: cover;
     width: 100%;
-    height: 100vh;
+    height: 100svh;
     background-repeat: no-repeat;
 }
 
@@ -56,8 +56,8 @@ body{
         top:0;
         left:0;
         z-index:-1;
-        width:100vw;
-        height:100vh;
+        width:100lvw;
+        height:100lvh;
         background:url("../../images/titech.jpeg") no-repeat;
         -webkit-background-size:cover;
         background-size:cover;
