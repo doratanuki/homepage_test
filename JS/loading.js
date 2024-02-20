@@ -43,7 +43,7 @@ function repeat(){
     let time = setInterval(next_animation,2000);
 }
 
-$(function(){
+$(window).on('load',function(){
     repeat();
     $("#loading").delay(4400).fadeOut('slow');
     $("#loading-text").delay(4000).fadeOut('slow')
