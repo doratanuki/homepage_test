@@ -176,4 +176,5 @@ img{
 #section1{
     background-image: url(../images/books.jpg);
     background-attachment: fixed;
+    background-size: contain;
 }
