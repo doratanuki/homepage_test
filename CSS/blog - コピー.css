@@ -171,9 +171,3 @@ img{
     background-color: #00102981;
     box-shadow:inset 0 6px 8px -5px rgba(255, 255, 255, 0.7), inset 0px -6px 8px -5px rgba(255, 255, 255, 0.7);
 }
-
-/*変更点*/
-#section1{
-    background-image: url(../images/books.jpg);
-    background-attachment: fixed;
-}
