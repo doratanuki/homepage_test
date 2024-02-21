@@ -130,7 +130,8 @@ img{
     left: 0;
     height: 100%;
     width: 100%;
-    clip: rect(auto auto auto auto);
+    z-index: -1;
+    clip-path: inset(0);
 }
 
 .sec1bg img{
@@ -151,7 +152,8 @@ img{
     left: 0;
     height: 100%;
     width: 100%;
-    clip: rect(auto auto auto auto);
+    z-index: -2;
+    clip-path: inset(0);
 }
 
 .sec2bg img{
@@ -174,7 +176,8 @@ img{
     left: 0;
     height: 100%;
     width: 100%;
-    clip: rect(auto auto auto auto);
+    z-index: -3;
+    clip-path:inset(0)
 }
 
 .sec3bg img{
