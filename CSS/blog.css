@@ -22,6 +22,11 @@ main{
     border-bottom: solid white 1px;
 }
 
+p{
+    text-indent: 1rem;
+}
+
+
 /*==========================================
                     セクション1
 ============================================*/
@@ -120,6 +125,7 @@ img{
     text-align: center;
     border-bottom: solid #ffffff;
 }
+
 
 /*======背景画像======*/
 

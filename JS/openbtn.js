@@ -6,7 +6,6 @@ $(function(){$(".openbtn-frame").html('\
         <ul>\
             <li class="open-menu-item"><a href="index.html">HOME</a></li>\
             <li class="open-menu-item"><a href="blog.html">BLOG</a></li>\
-            <li class="open-menu-item"><a href="profile.html">LIKE</a></li>\
             <li class="open-menu-item"><a href="news.html">News</a></li>\
             <li class="open-menu-item"><a href="works.html">Works</a></li>\
         </ul>\
