@@ -1,5 +1,5 @@
 body{
-    background-color: #f6f6f6;
+    background-color: #ffffff;
 }
 
 .open-menu{
@@ -9,14 +9,14 @@ body{
 main{
     padding: 0;
     background-color: #B5D9DB;
-    border: 3px solid #aaa;
+    border: 2px solid grey;
 }
 
 /*タイトル*/
 .title{
-    margin:0px 20px;
-    padding: 10px;
-    border-bottom:2px solid grey ;
+    margin: 1rem 2rem;
+    padding: 0px;
+    border-bottom: 2px solid rgb(0, 0, 0) ;
     /*フォント*/
     color: rgb(0, 0, 0);
     font-size: 25px;
@@ -72,9 +72,9 @@ main{
 
 .tweet-heading{
     margin: 0;
-    padding: 0 1rem ;
+    padding: 0 1rem 5px;
     border-bottom: #B5D9DB solid;
-    border-image:linear-gradient(to right, #7f7fff, #7fff7f) 1;
+    border-image:linear-gradient(to right, #000000, #fff) 1 ;
 }
 
 .tweet-contents{
