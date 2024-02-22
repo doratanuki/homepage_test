@@ -74,6 +74,7 @@ main{
     margin: 0;
     padding: 0 1rem ;
     border-bottom: #B5D9DB solid;
+    border-image:linear-gradient(to right, #7f7fff, #7fff7f) 1;
 }
 
 .tweet-contents{
