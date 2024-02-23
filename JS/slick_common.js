@@ -13,5 +13,5 @@ $('.slider').slick({
   pauseOnFocus: false,//フォーカスで一時停止を無効
   pauseOnHover: false,//マウスホバーで一時停止を無効
   pauseOnDotsHover: false,//ドットナビゲーションをマウスホバーで一時停止を無効
-  touchMove:false
+  swipe: false
 });
