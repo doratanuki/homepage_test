@@ -1,33 +1,56 @@
 function test(){
-    var ScrollTop = $(window).scrollTop();
+    console.clear()
+    var ScrollTop = $(window).scrollTop();//head下から
     var WindowHeight = $(window).height();
     var ScrollBottom = ScrollTop + WindowHeight
+    
+    //======================section1=========================
+    var sec1Top = $("#section1").offset().top;
+    var sec1Height = $("#section1").height();
+    var sec1Bottom = sec1Top + sec1Height
 
-    //座標取得
-    var sec1top = $("#section1").offset().top;
-    var sec2top = $("#section2").offset().top;
-    var sec3top = $("#section3").offset().top;
+    var sec1A = ScrollTop - (sec1Top + sec1Height*1/2)//opacity=1となる座標
+    var sec1B = sec1Height*1/2//そこから下までの距離
 
-    //要素の大きさ取得
-    var sec1height = $("#section1").outerHeight();
-    var sec2height = $("#section2").outerHeight();
-    var sec3height = $("#section3").outerHeight();
+    //sec1 fadeout
+    var opa1 = 1 - sec1A/sec1B
+    $("#section1").css("opacity", opa1);
 
-    //blankのtop
-    var blank1top = $("#blank1").offset().top;
-    var blank2top = $("#blank2").offset().top;
-    var blank3top = $("#blank3").offset().top;
-    console.log(blank1top)
-    console.log(blank2top)
+    //======================section2=========================
+    var sec2Top = $("#section2").offset().top;
+    var sec2Height = $("#section2").height();
+    var sec2Bottom = sec2Top + sec2Height;
 
-    //section1切るY座標
-    var v1 = ScrollBottom - blank1top;
-    $(".sec1bg img").css("clip-path", `inset(0px 0px ${v1}px 0px)`);
-    //section2
-    var v2 = ScrollBottom - blank2top;
-    $(".sec2bg img").css("clip-path", `inset(${sec2top - ScrollTop}px 0px ${v2}px 0px)`);
-    //section3
-    $(".sec3bg img").css("clip-path", `inset(${sec3top - ScrollTop}px 0px 0px 0px)`);
+    var sec2A = ScrollTop - (sec2Bottom - sec2Height*1/7)//opacity=1となる座標
+    var sec2B = sec2Height*1/7//そこから下までの距離
+
+    //sec2 fadein
+    var opa2in = sec1A/sec1B
+    $("#section2").css("opacity", opa2in);
+
+    //sec2 fadeout
+    var opa2 = 1 - sec2A/sec2B
+    $("#section2").css("opacity", opa2);
+
+    //======================section3=========================
+    var sec3Top = $("#section3").offset().top;
+    var sec3Height = $("#section3").height();
+    var sec3Bottom = sec3Top + sec3Height
+
+    var sec3A = ScrollTop - (sec3Top + sec3Height*1/2)//opacity=1となる座標
+    var sec3B = sec3Height*1/2//そこから下までの距離
+
+    //sec3 fadeout
+    var opa3 = 1 - sec3A/sec3B
+    $("#section3").css("opacity", opa3);
+
+
+
+
+    console.log("TOP",ScrollTop)
+    console.log("opa1",opa1)
+    console.log("分子",sec1A)
+    console.log("分母",sec1B)
 }
 
 

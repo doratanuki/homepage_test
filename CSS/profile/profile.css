@@ -1,7 +1,7 @@
 body{
     margin: 0;
     background-color: #000000;
-
+    
 }
 
 main{
@@ -19,12 +19,17 @@ main{
 }
 
 .open-menu{
-    background-color: #ccc;
+    background-color: #3e3e3e;
+}
+
+.open-menu-item a{
+    color: white;
+    font-family: serif;
 }
 
 /*フッター*/
 footer{
-    background-color: #222222;
+    background-color: #3e3e3e;
     color: white;
 }
 

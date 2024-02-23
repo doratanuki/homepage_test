@@ -1,5 +1,5 @@
 body{
-    background-color: #2d364c;
+    background-color: #000000;
 }
 
 main{
@@ -15,15 +15,34 @@ main{
 .title{
     text-align: center;
     color:white;
-    margin-top: 10px;
-    margin: 10px 2rem;
+    margin: 2rem;
     line-height: 50px;
     height: 50px;
-    border-bottom: solid white 1px;
+    border-bottom: solid white 2px;
+    border-image: linear-gradient(to right, #252525 30%, #ffffff 50%, #252525 70%) 100 ;
 }
 
 p{
     text-indent: 1rem;
+}
+
+/*セクション共通*/
+section{
+    margin-bottom: 100px;
+    position: relative;
+    padding: 20px;
+    box-shadow: 0 0 15px 1px;
+}
+
+section .text-all{
+    padding: 20px;
+    background-color:rgba(255, 255, 255, 0.686);
+}
+
+section h2{
+    padding-bottom: 5px;
+    margin: 0;
+    text-align: center;    
 }
 
 
@@ -32,26 +51,13 @@ p{
 ============================================*/
 
 
-.reason{
-    position: relative;
-    padding: 20px;
-    margin: 0;
-}
-
-
 .reason .text-all{
-    padding: 20px;
-    margin: px;
-    background-color:rgba(255, 255, 255, 0.686);
     color: #000;
-
+    background-color:rgba(255, 255, 255, 0.8);
 }
 
-.reason h1{
-    padding-bottom: 5px;
-    margin: 0;
-    text-align: center;
-    border-bottom: solid #001029;
+.reason h2{
+    border-bottom: 2px solid #000000;
 }
 
 
@@ -61,21 +67,11 @@ p{
 ============================================*/
 
 
-.reserch-pay{
-    position: relative;
-    padding: 20px;
-    margin: 0;
-}
-
 .reserch-pay .text-all{
-    padding: 20px;
-    background-color:rgba(255, 255, 255, 0.7);
     color: #000;
 }
 
-.reserch-pay h1{
-
-    text-align: center;
+.reserch-pay h2{
     border-bottom: solid black;
 }
 
@@ -109,20 +105,14 @@ img{
 ============================================*/
 
 #section3{
-    position: relative;
-    margin: 0;
-    padding: 20px;
     color: #fff;
 }
 
 #section3 .text-all{
-    padding: 20px;
-    background-color: #0000005d;
+      background-color:rgba(0, 0, 0, 0.4);
 }
 
-
-#section3 h1{
-    text-align: center;
+#section3 h2{
     border-bottom: solid #ffffff;
 }
 

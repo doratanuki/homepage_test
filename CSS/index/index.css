@@ -1,9 +1,17 @@
-
-
 body{
     font-family: serif;
     margin: 0;
     padding: 0;
+}
+
+/*ハンバーガーメニュー*/
+.open-menu{
+    background-color: #2d364c;
+}
+
+.open-menu-item a{
+    color: white;
+    font-family: serif;
 }
 
 
