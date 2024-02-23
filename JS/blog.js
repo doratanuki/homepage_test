@@ -33,7 +33,7 @@ function test(){
 
         //sec2 fadein
         var sec2Ain = ScrollBottom - sec2Top //opacityが1以下となる座標
-        var sec2Bin = 250//そこから下までの距離
+        var sec2Bin = WindowHeight*1/2//そこから下までの距離
         var opa2in = sec2Ain/sec2Bin;
         $("#section2").css("opacity", opa2in);
 
@@ -66,7 +66,7 @@ function test(){
 
         //sec3 fadein
         var sec3Ain = ScrollBottom - sec3Top //opacityが1以下となる座標
-        var sec3Bin = 250//そこから下までの距離
+        var sec3Bin = WindowHeight*1/2//そこから下までの距離
         var opa3in = sec3Ain/sec3Bin;
         $("#section3").css("opacity", opa3in);
 
