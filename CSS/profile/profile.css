@@ -9,10 +9,24 @@ main{
     font-family: serif;
 }
 
+/*ハンバーガーメニュー*/
+.openbtn span{
+    background-color: white;
+}
+
+.openbtn span:nth-of-type(3)::after {
+    color: white;
+}
+
 .open-menu{
     background-color: #ccc;
 }
 
+/*フッター*/
+footer{
+    background-color: #222222;
+    color: white;
+}
 
 section{
     margin: 0;
@@ -35,32 +49,37 @@ slider img
     
 }
 
-/*==========================================*/
+/*==========================================
+recommend
+==========================================*/
+
 .recommend{
     position: relative;
     text-align: center;
     padding-bottom: 1rem;
-    margin-bottom: 100px;
+    margin-bottom: 1rem;
 }
 
+/*背景*/
 .recommend-bg{
 
     position: absolute;
     top: 0;
     left: 0;
-    height: 100vh;
+    height: 100%;
     width: 100vw;
     z-index: -1;
     clip-path: inset(0);
 }
 
-.particles-js{
+#particles-js{
+    background-color: #000000;
     position: fixed;
     top:0;
     left:0;
     z-index:-1;
     width:100vw;
-    height:100vh;
+    height: 100%;
 }
 
 
@@ -74,8 +93,19 @@ slider img
     border-image: linear-gradient(to right, #00115b 20%, #b6b6b6 50%, #00115b 80%) 1 ;
 }
 
-.youtube1{
-    width: calc(100% - 4rem);
+/*youtube*/
+
+.youtube-frame{
+    width: 100%;
     height: 300px;
-    margin: 0;
+    position: relative;
+}
+
+.youtube1{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: calc(100% - 4rem);
+    height: 100%;
+    margin-left: 2rem;
 }

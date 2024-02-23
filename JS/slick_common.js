@@ -10,7 +10,8 @@ $('.slider').slick({
   prevArrow: '<div class="slick-prev"></div>',//矢印部分PreviewのHTMLを変更
   nextArrow: '<div class="slick-next"></div>',//矢印部分NextのHTMLを変更
   dots: false,//下部ドットナビゲーションの表示
-      pauseOnFocus: false,//フォーカスで一時停止を無効
-      pauseOnHover: false,//マウスホバーで一時停止を無効
-      pauseOnDotsHover: false,//ドットナビゲーションをマウスホバーで一時停止を無効
+  pauseOnFocus: false,//フォーカスで一時停止を無効
+  pauseOnHover: false,//マウスホバーで一時停止を無効
+  pauseOnDotsHover: false,//ドットナビゲーションをマウスホバーで一時停止を無効
+  touchMove:false
 });
