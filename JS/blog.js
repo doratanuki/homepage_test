@@ -39,19 +39,10 @@ function test(){
 
     }
 
-    console.log("bottom",ScrollBottom)
-    console.log("opa2in",opa2in)
-    console.log("分子",sec2Ain)
-    console.log("分母",sec2Bin)
-
-
-
     //======================section3=========================
     var sec3Top = $("#section3").offset().top;
     var sec3Height = $("#section3").height();
     var sec3Bottom = sec3Top + sec3Height
-
-
 
 
     
