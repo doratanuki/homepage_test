@@ -45,7 +45,7 @@ main{
     }
 }
 /*==================================================
-                    profile
+                    PLOFILE
 ====================================================*/
 .profile{
     background-color: #2d364caa;
@@ -65,7 +65,7 @@ main{
 /*プロフィールテキスト全体*/
 .profile-text{
     color: white;
-    border-left: 2px solid #ccc;
+    border-left: 2px solid #ffffff;
     padding: 1rem;
     margin-left: 2rem;
 }
@@ -105,47 +105,9 @@ main{
                     481px ~ 1024px
 ====================================================*/
 @media screen and (min-width:481px) and (max-width:1024px){
-
-    /*プロフィール写真*/
-    .profile img{
-        width: 200px;
-        height: 200px;
-    }
-    /*テキスト全体*/
     .profile-text{
-        margin: 1rem 150px;
-        padding-left: 30px;
-    }
-    /*名前*/
-    .profile-text h3{
-        font-size: 30px;
-    }
-
-    /*自己紹介*/
-    .profile-text p{
-        font-size: 16px;
-
-    }
-
-
-    .career-list{
-        list-style: none;
-        color: white;
-        font-size: 16px;
-        border-left: 5px solid #ccc;
-        /*配置*/
-        padding: 10px 0;
-        padding-left: 20px;
-        margin: 20px 150px;
-    }
-    
-    .career-list-item{
-        /*枠の上下マージン*/
-        margin: 10px 0px;
-        /*枠線*/
-        border-bottom: 2px solid #ccc;
-        padding-left: 10px;
-        padding-top: 5px;
+        padding: 2rem;
+        margin: 0 3rem;
     }
 
 }

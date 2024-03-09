@@ -15,7 +15,22 @@ body{
 }
 
 
-/*写真と名前*/
+/*=====================================
+            写真と名前
+====================================*/
+body::before {
+    position:fixed;
+    top:0;
+    left:0;
+    z-index:-1;
+    width:100lvw;
+    height:100lvh;
+    background:url("../../images/titech.jpeg") no-repeat;
+    -webkit-background-size:cover;
+    background-size:cover;
+    content:"";
+}
+
 .img-and-name{
     opacity: 1;
     position: relative;
@@ -41,7 +56,7 @@ body{
     height: 180px;
     border-radius: 50%;
     margin:auto;
-    border:rgba(255, 255, 255, 0.7) solid 7px ;
+    border:rgb(255, 255, 255) solid 7px ;
 }
 
 .img-and-name h1{
@@ -54,95 +69,24 @@ body{
 }
 
 
-
-/*===============================================
-                    ~480px
-================================================*/
-@media screen and (max-width:480px){
-    body::before {
-        position:fixed;
-        top:0;
-        left:0;
-        z-index:-1;
-        width:100lvw;
-        height:100lvh;
-        background:url("../../images/titech.jpeg") no-repeat;
-        -webkit-background-size:cover;
-        background-size:cover;
-        content:"";
-    }
-    
-    .header-title{
-        /*フォント・サイズなど*/
-        font-size:45px;
-        text-shadow:3px 3px 0 #333;
-        color: rgb(255, 255, 255);
-        font-weight: bold;
-        background-color:rgba(255, 255, 255, 0.3);
-        border-radius: 10px;
-        /*配置*/
-        text-align: center;
-        padding: 3px 20px;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%,-50%);
-    }
-}
-
 /*===============================================
                     481px~1024px
 ================================================*/
 @media screen and (min-width:481px) and (max-width:1024px){
-    .open-menu{
-        background-color: #d7af92;
+    body::before {
+        background-position: center;
     }
 
-    .img-and-name{
-        /*背景画像*/
-        background-image: url(../../images/IMG_1104.jpeg);
-        aspect-ratio: 3/2;
-        overflow: hidden;
-    }
+    /*ハンバーガーメニュー*/
     
-    /*タイトル*/
-    .header-title{
-        /*フォント・サイズなど*/
-        font-size:50px;
-        color: black;
-        font-weight: bold;
-        text-shadow: 3px 3px rgba(0, 0, 0, 0.4);
-        background-color: rgba(255, 255, 255, 0.7);
-        padding: 0px 30px;
-        /*配置*/
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%,-50%);
-        text-align: center;
-    }
 }
 
 /*===============================================
                     1025px~
 ================================================*/
 @media screen and (min-width:1025px) {
-    .img-and-name{
-        /*背景画像*/
-        background-image: url(../../images/IMG_1104.jpeg);
-        aspect-ratio: 3/2;
-    }
 
-    .header-title{
-        /*フォント・サイズなど*/
-        font-size:100px;
-        color: black;
-        font-weight: bold;
-        /*配置*/
-        position: absolute;
-        top: 50px;
-        left: 30px;
-    }
+
 
     .open-menu{
         padding: 0px;
