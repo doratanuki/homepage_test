@@ -53,8 +53,8 @@ $(window).on('load',function(){
     setTimeout(function(){
         $("#loading-text").fadeOut('slow')
         $("#loading-logo img").animate({width : '180px'}, 1000);
-    },4400)
+    },400)
     setTimeout(function(){
         $("#loading").fadeOut('slow')
-    },4600)
+    },600)
 });

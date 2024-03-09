@@ -5,10 +5,10 @@ $(function(){$(".openbtn-frame").html('\
     <nav class="open-menu">\
         <ul>\
             <li class="open-menu-item"><a href="index.html">HOME</a></li>\
+            <li class="open-menu-item"><a href="others.html">sample</a></li>\
             <li class="open-menu-item"><a href="blog.html">BLOG</a></li>\
             <li class="open-menu-item"><a href="news.html">News</a></li>\
             <li class="open-menu-item"><a href="works.html">Works</a></li>\
-            <li class="open-menu-item"><a href="profile.html">OTHERS</a></li>\
         </ul>\
     </nav>'
 )});
