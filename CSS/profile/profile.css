@@ -50,7 +50,7 @@ slider img
 
 .blank{
     width: 100%;
-    height: 100vh;
+    height: 100vh;/*固定*/
     
 }
 

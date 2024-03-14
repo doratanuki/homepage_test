@@ -8,6 +8,15 @@ function fadeScroll(){
     $(".slick-slider").css("opacity", opa1);
 }
 
+//Window高さ固定
+$(function(){
+    var windowHeight = $(window).height();
+    $('.blank').css('height',`${windowHeight}px`);
+    $('.slider').css('height',`${windowHeight}px`);
+    $('.slider img').css('height',`${windowHeight}px`);
+    $('.slick-prev, .slick-next ').css('height',`${windowHeight}px`);
+});
+
 $(window).scroll(function(){
     fadeScroll();
 });
