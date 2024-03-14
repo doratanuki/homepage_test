@@ -1,7 +1,6 @@
 //HTML挿入
 $(function(){$(".loading-frame").html('\
 <div id="loading">\
-<div id="loading-logo"><img src="images/profile/doraemon.jpg"></div>\
 <div id="loading-text">\
     <p>\
         <span>L</span>\
@@ -53,8 +52,8 @@ $(window).on('load',function(){
     setTimeout(function(){
         $("#loading-text").fadeOut('slow')
         $("#loading-logo img").animate({width : '180px'}, 1000);
-    },400)
+    },4400)
     setTimeout(function(){
         $("#loading").fadeOut('slow')
-    },600)
+    },4600)
 });
