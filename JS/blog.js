@@ -1,5 +1,4 @@
 function test(){
-    console.clear()
     var ScrollTop = $(window).scrollTop();//head下から
     var WindowHeight = $(window).height();
     var ScrollBottom = ScrollTop + WindowHeight
@@ -70,9 +69,9 @@ function test(){
 //Window高さ固定
 $(function(){
     var windowHeight = $(window).height();
-    $('.sec1bg, .sec1bg img').css('height',`${windowHeight + 50}px`);
-    $('.sec2bg, .sec2bg img').css('height',`${windowHeight + 50}px`);
-    $('.sec3bg, .sec3bg img').css('height',`${windowHeight + 50}px`);
+    $('.sec1bg img').css('height',`${windowHeight + 50}px`);
+    $('.sec2bg img').css('height',`${windowHeight + 50}px`);
+    $('.sec3bg img').css('height',`${windowHeight + 50}px`);
 });
 
 $(window).scroll(function(){

@@ -177,7 +177,7 @@ main{
 
 .about p{
     color: white;
-    font-size: 13px;
+    font-size: 16px;
     padding: 0 1rem;
     margin: 1rem 2rem;
     border-right: 2px solid #ccc;
@@ -204,7 +204,7 @@ main{
 
 .contact p{
     color: white;
-    font-size: 13px;
+    font-size: 16px;
     padding: 0 1rem;
     margin: 1rem 2rem;
     border-left: 2px solid #ccc;
