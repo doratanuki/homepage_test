@@ -69,9 +69,9 @@ function test(){
 //Window高さ固定
 $(function(){
     var windowHeight = $(window).height();
-    $('.sec1bg img').css('height',`${windowHeight + 50}px`);
-    $('.sec2bg img').css('height',`${windowHeight + 50}px`);
-    $('.sec3bg img').css('height',`${windowHeight + 50}px`);
+    $('.sec1bg img').css('height',`${windowHeight + 100}px`);
+    $('.sec2bg img').css('height',`${windowHeight + 100}px`);
+    $('.sec3bg img').css('height',`${windowHeight + 100}px`);
 });
 
 $(window).scroll(function(){
