@@ -55,9 +55,13 @@ function fadeScroll(){
     $(".contact").css("opacity", opa4);
 }
 
-
-
 $(window).scroll(function(){
     fadeAnime();
     fadeScroll();
+});
+
+$(function(){
+    var windowHeight = $(window).height();
+    console.log(windowHeight);
+    $('.img-and-name').css('height',`${windowHeight}px`);
 });
