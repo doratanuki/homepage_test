@@ -1,0 +1,92 @@
+body{
+    background-color: #ffffff;
+}
+
+.open-menu{
+    background-color: #B5D9DB;
+}
+
+main{
+    padding: 0;
+    background-color: #B5D9DB;
+    border: 2px solid grey;
+}
+
+/*タイトル*/
+.title{
+    margin: 1rem 2rem;
+    padding: 0px;
+    border-bottom: 2px solid rgb(0, 0, 0) ;
+    /*フォント*/
+    color: rgb(0, 0, 0);
+    font-size: 25px;
+    text-align: center;
+}
+
+@media screen and (max-width:480px){
+    main{
+        margin: 1rem;
+        border-radius: 20px;
+    }
+
+}
+@media screen and (min-width:481px) and (max-width:1024px){
+    main{
+        margin: 30px 10%;
+        border-radius: 30px;
+    }   
+    .title{
+        margin:0px 25px;
+        padding: 10px;
+        font-size: 30px;
+    }
+
+}
+@media screen and (min-width:1025px){
+    main{
+        margin: 30px 25%;
+        border-radius: 30px;
+    }
+    .title{
+        margin:0px 40px;
+        padding: 20px;
+        font-size: 30px;
+    }
+}
+
+/*並び方*/
+.news{
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+/*===================*/
+.tweet{
+    /*枠*/
+    border: 2px solid rgb(70, 70, 70);
+    border-radius: 15px;
+    background-color: white;
+    margin:1rem;
+    padding: 1rem;
+}
+
+.tweet-heading{
+    margin: 0;
+    padding: 0 1rem 5px;
+    border-bottom: #B5D9DB solid;
+    border-image:linear-gradient(to right, #000000, #fff) 1 ;
+}
+
+.tweet-contents{
+    /*フォント*/
+    font-size: 14px;
+    /*テキスト位置*/
+    text-align:start;
+    margin: 1rem;
+}
+
+.tweet-day{
+    text-align: end;
+    margin: 0;
+    font-size: 12px;
+}

@@ -1,0 +1,47 @@
+#loading {
+    position: fixed;
+    width: 100lvw;
+    height: 100lvh;
+    z-index: 99999;
+    background:#2d364c;
+}
+
+#loading-logo {
+    z-index: 99999;
+    width: 100%;
+    position: relative;
+    top: calc(50% - 30px);
+    left: 0;
+    transform: translateY(-50%);
+    text-align: center;
+}
+
+#loading-logo img {
+    width:150px;
+    height: auto;
+    border-radius: 50%;
+    border: solid white 2px;
+}
+
+#loading-text{
+    /*Place*/
+    position: relative;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    width: 100%;
+    text-align: center;
+}
+
+#loading-text p{
+    font-size: 30px;
+    font-family: serif;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    text-shadow: #999999 2px 2px 2px;
+    margin: 0;
+}
+#loading-text p span{
+    position: relative;
+    top: 0px;
+}

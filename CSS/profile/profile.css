@@ -1,0 +1,106 @@
+body{
+    margin: 0;
+    background-color: #000000;
+    
+}
+
+main{
+    color: white;
+    font-family: serif;
+}
+
+/*ハンバーガーメニュー*/
+.openbtn span{
+    background-color: white;
+}
+
+.openbtn span:nth-of-type(3)::after {
+    color: white;
+}
+
+.open-menu{
+    background-color: #3e3e3e;
+}
+
+.open-menu-item a{
+    color: white;
+    font-family: serif;
+}
+
+/*フッター*/
+footer{
+    background-color: #3e3e3e;
+    color: white;
+}
+
+section{
+    margin: 0;
+}
+
+/*==========================
+slider img
+=============================*/
+.slider-item01 img, .slider-item02 img{
+    object-position: top right;
+}
+
+.slider-item05 img{
+    object-position: right bottom;
+}
+
+.blank{
+    width: 100%;
+    height: 100vh;/*固定*/
+    
+}
+
+/*==========================================
+recommend
+==========================================*/
+
+.recommend{
+    position: relative;
+    text-align: center;
+    padding-bottom: 1rem;
+    margin-bottom: 1rem;
+}
+
+/*背景*/
+.recommend-bg{
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100vw;
+    z-index: -1;
+    clip-path: inset(0);
+}
+
+#particles-js{
+    background-color: #000000;
+    position: fixed;
+    top:0;
+    left:0;
+    z-index:-1;
+    width:100vw;
+    height: 100%;
+}
+
+
+
+
+
+.title{
+    margin: 1rem 2rem;
+    font-size: 2rem;
+    border-bottom: solid black 2px;
+    border-image: linear-gradient(to right, #00115b 20%, #b6b6b6 50%, #00115b 80%) 1 ;
+}
+
+/*youtube*/
+
+.youtube1{
+    width: calc(100% - 4rem);
+    aspect-ratio: 16/9;
+}

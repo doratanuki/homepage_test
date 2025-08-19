@@ -1,0 +1,168 @@
+body{
+    background-color: #A1C4A6;
+}
+
+.open-menu{
+    background-color: #A1C4A6;
+}
+
+main{
+    margin: 20px 10px;
+    background-color: #eee;
+}
+.works{
+    padding: 10px;
+}
+
+/*タイトル*/
+.works-title{
+    padding: 5px 0px ;
+    border-bottom: 3px solid #A1C4A6 ;
+    border-left: 10px solid #A1C4A6;
+    /*フォント*/
+    color: #000000;
+    text-align: center;
+}
+
+/*テキスト*/
+.works-text{
+    /*フォント*/
+    background-color: white;
+    box-shadow: 0px 3px 6px 1px rgba(0, 0, 0, 0.3);
+    border-radius: 20px;
+    /*配置*/
+    text-align: center;
+    margin: 20px auto;
+}
+
+@media screen and (max-width:1024px){
+    main{
+        margin:20px;
+        box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.5);
+    }
+    .works-title{
+        margin:0px 20px;
+        font-size: 25px;
+    }
+    .works-text{
+        /*フォント*/
+        font-size: 15px;
+        width: calc(96% - 60px);
+        padding: 10px 20px;
+    }
+}
+@media screen and (min-width:1025px){
+    main{
+        margin:20px 300px;
+        box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.5);
+    }
+    .works-title{
+        margin:0px 100px;
+        font-size: 30px;
+    }
+    .works-text{
+        /*フォント*/
+        font-size: 20px;
+        width: 80%;
+        padding: 20px 0;
+    }
+}
+
+.works-nav{
+    /*配置*/
+    width: 96%;
+    margin: auto;
+
+}
+
+.works-nav ul{
+    /*リストの配置*/
+    display: flex;
+    flex-wrap: wrap; /*折り返し指定*/
+    justify-content:space-around;
+    padding: 0%;
+}
+
+/*リスト*/
+.works-list{
+    list-style: none;
+    /*配置*/
+    width: calc(48% - 20px);
+    padding: 0;
+    margin: 10px;
+}
+
+/*リンク*/
+.works-list a{
+    text-decoration: none;
+    display: block; /*写真とリンクサイズを一致*/
+    justify-content: center;
+    margin: 0 auto;
+}
+
+/*リンク上にマウスが乗った時*/
+.works-list a :hover, .works-img :hover{
+    transform: scale(1.1,1.1);
+    transition: all 0.5s;
+}
+
+/*画像*/
+.works-img-sp{
+    width: 100%;
+    aspect-ratio: 9/16;
+    box-shadow: 0px 2px 5px 2px rgba(0, 0, 0, 0.4);
+    
+}
+.works-img-pc{
+    width: 100%;
+    aspect-ratio: 1.681/1;
+    box-shadow: 0px 3px 5px 3px rgba(0, 0, 0, 0.4);
+}
+
+@media screen and (max-width:1024px){
+    .works-list a{
+        width: 70%;
+    }
+    .works-img-pc{
+        display: none;
+    }
+    /*作品タイトル*/
+    .works-list-title{
+        text-align: center;
+        margin: 5px 0;
+        font-weight: bold;
+        font-size: 16px;
+        color: black;
+    }
+    /*作品説明*/
+    .works-list-text{
+        text-align: center;
+        margin: 10px 0;
+        font-size: 13px;
+        color: black;
+    }
+}
+@media screen and (min-width:1025px){
+    /*画像*/
+    .works-list a{
+        width: 60%;
+    }
+    .works-img-sp{
+        display: none;
+    }
+    /*作品タイトル*/
+    .works-list-title{
+        text-align: center;
+        margin: 10px 0;
+        font-weight: bold;
+        font-size: 22px;
+        color: black;
+    }
+    /*作品説明*/
+    .works-list-text{
+    text-align: center;
+    margin: 20px 0;
+    font-size: 16px;
+    color: black;
+}
+}
